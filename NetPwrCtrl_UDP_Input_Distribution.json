@@ -1,0 +1,5104 @@
+[
+    {
+        "id": "393cc12a.be2506",
+        "type": "tab",
+        "label": "NetPwrCtrl_UDP_Input_Distribution",
+        "disabled": false,
+        "info": "Collects input from NetPwrCtrl UDP port and distributes into data structure."
+    },
+    {
+        "id": "e6f0000e.dfd8b",
+        "type": "udp in",
+        "z": "393cc12a.be2506",
+        "name": "NetPwrCtrlIn",
+        "iface": "",
+        "port": "7577",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "utf8",
+        "x": 70,
+        "y": 940,
+        "wires": [
+            [
+                "b7760de0.58a35",
+                "ed6dad6b.718fb"
+            ]
+        ]
+    },
+    {
+        "id": "a14d92a6.44d21",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ':'",
+        "splt": ":",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": true,
+        "addname": "",
+        "x": 420,
+        "y": 280,
+        "wires": [
+            [
+                "1b4d4c65.2be9a4"
+            ]
+        ]
+    },
+    {
+        "id": "b7760de0.58a35",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch MAC",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "0.4.163.19.11.4",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "0.4.163.14.12.99",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 270,
+        "y": 940,
+        "wires": [
+            [
+                "a14d92a6.44d21"
+            ],
+            [
+                "de44ba48.a30d28"
+            ]
+        ]
+    },
+    {
+        "id": "1b4d4c65.2be9a4",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "29",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 590,
+        "y": 280,
+        "wires": [
+            [
+                "e4b4800e.de1db"
+            ]
+        ]
+    },
+    {
+        "id": "e4b4800e.de1db",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "4",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "5",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "6",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "7",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "8",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "9",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "10",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "11",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "12",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "13",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "14",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "15",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "16",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "17",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "18",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "19",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "20",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "21",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "22",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "23",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "24",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "25",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "26",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "27",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "28",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 28,
+        "x": 770,
+        "y": 280,
+        "wires": [
+            [
+                "62d27d1a.011034"
+            ],
+            [
+                "fdc5df39.22b93"
+            ],
+            [
+                "eb2f5ef0.7b7118"
+            ],
+            [
+                "1a6c374d.6e7a11"
+            ],
+            [
+                "9714377b.345cc"
+            ],
+            [
+                "eee173a8.325a3"
+            ],
+            [
+                "28170063.fd19d"
+            ],
+            [
+                "580d0b9b.96dc2c"
+            ],
+            [
+                "10683aab.9341cd"
+            ],
+            [
+                "9df08c29.eeee2"
+            ],
+            [
+                "4a737463.b96b04"
+            ],
+            [
+                "d06f8986.71052"
+            ],
+            [
+                "1728583d.8a4c48"
+            ],
+            [
+                "3ce5fb9.fe2cd04"
+            ],
+            [
+                "b4c45b4a.824a98"
+            ],
+            [
+                "45343e1b.7c1338"
+            ],
+            [
+                "9b32bb3c.8f2e58"
+            ],
+            [
+                "8f6f12d5.2f39"
+            ],
+            [
+                "acefd8db.b30538"
+            ],
+            [
+                "8373a544.fac198"
+            ],
+            [
+                "3b974017.1424f8"
+            ],
+            [
+                "f62afeaf.47f05"
+            ],
+            [
+                "66441c5.a450d64"
+            ],
+            [
+                "e96237e.7113fc8"
+            ],
+            [
+                "89848b19.1d532"
+            ],
+            [
+                "fcec751e.977f2"
+            ],
+            [
+                "3d3da924.66f29e"
+            ],
+            [
+                "c71b6454.a53f88"
+            ]
+        ]
+    },
+    {
+        "id": "62d27d1a.011034",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Name",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 970,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "fdc5df39.22b93",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IP",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IP",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 960,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "eb2f5ef0.7b7118",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Subnet Mask",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Mask",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1000,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "1a6c374d.6e7a11",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Gateway",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Gateway",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 980,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "9714377b.345cc",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign MAC",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.MAC",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 970,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "b6fe7943.24b908",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out1 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_1.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "eee173a8.325a3",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 300,
+        "wires": [
+            [
+                "de77de05.17da2"
+            ]
+        ]
+    },
+    {
+        "id": "de77de05.17da2",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "2",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 300,
+        "wires": [
+            [
+                "2dd879d2.acd416"
+            ]
+        ]
+    },
+    {
+        "id": "2dd879d2.acd416",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1270,
+        "y": 300,
+        "wires": [
+            [
+                "b6fe7943.24b908"
+            ],
+            [
+                "7119e4ed.ae6bcc"
+            ]
+        ]
+    },
+    {
+        "id": "7119e4ed.ae6bcc",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out1 State",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_1.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "3dcd8763.7dde8",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out2 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_2.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "28170063.fd19d",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 340,
+        "wires": [
+            [
+                "da61cf78.4bf95"
+            ]
+        ]
+    },
+    {
+        "id": "da61cf78.4bf95",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "2",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 340,
+        "wires": [
+            [
+                "c436ee0f.d75aa"
+            ]
+        ]
+    },
+    {
+        "id": "c436ee0f.d75aa",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1270,
+        "y": 340,
+        "wires": [
+            [
+                "3dcd8763.7dde8"
+            ],
+            [
+                "a43af639.446818"
+            ]
+        ]
+    },
+    {
+        "id": "a43af639.446818",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out2 State",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_2.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "580d0b9b.96dc2c",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 380,
+        "wires": [
+            [
+                "f066ad5f.daba08"
+            ]
+        ]
+    },
+    {
+        "id": "f066ad5f.daba08",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "2",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 380,
+        "wires": [
+            [
+                "682974e6.ca0fdc"
+            ]
+        ]
+    },
+    {
+        "id": "682974e6.ca0fdc",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1270,
+        "y": 380,
+        "wires": [
+            [
+                "28e3d63b.c5f212"
+            ],
+            [
+                "b20418ad.7ea108"
+            ]
+        ]
+    },
+    {
+        "id": "28e3d63b.c5f212",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out3 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_3.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "b20418ad.7ea108",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out3 State",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_3.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "10683aab.9341cd",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 420,
+        "wires": [
+            [
+                "5b45df49.039a9"
+            ]
+        ]
+    },
+    {
+        "id": "5b45df49.039a9",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "2",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 420,
+        "wires": [
+            [
+                "35b88514.789122"
+            ]
+        ]
+    },
+    {
+        "id": "35b88514.789122",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1270,
+        "y": 420,
+        "wires": [
+            [
+                "3fdb95fa.f9d2da"
+            ],
+            [
+                "7fb62692.e97ec8"
+            ]
+        ]
+    },
+    {
+        "id": "3fdb95fa.f9d2da",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out4 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_4.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "7fb62692.e97ec8",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out4 State",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_4.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "9df08c29.eeee2",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 460,
+        "wires": [
+            [
+                "3d71f60f.0127f2"
+            ]
+        ]
+    },
+    {
+        "id": "3d71f60f.0127f2",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "2",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 460,
+        "wires": [
+            [
+                "89a59708.5d9cb"
+            ]
+        ]
+    },
+    {
+        "id": "89a59708.5d9cb",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1270,
+        "y": 460,
+        "wires": [
+            [
+                "30047ab8.794fae"
+            ],
+            [
+                "4278ca7c.dbc29c"
+            ]
+        ]
+    },
+    {
+        "id": "30047ab8.794fae",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out5 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_5.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "4278ca7c.dbc29c",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out5 State",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_5.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "4a737463.b96b04",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 500,
+        "wires": [
+            [
+                "2d537a3f.aba48e"
+            ]
+        ]
+    },
+    {
+        "id": "2d537a3f.aba48e",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "2",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 500,
+        "wires": [
+            [
+                "15a493e8.d3acdc"
+            ]
+        ]
+    },
+    {
+        "id": "15a493e8.d3acdc",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1270,
+        "y": 500,
+        "wires": [
+            [
+                "8e7c824.971358"
+            ],
+            [
+                "e63dba16.a92b48"
+            ]
+        ]
+    },
+    {
+        "id": "8e7c824.971358",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out6 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_6.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "e63dba16.a92b48",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out6 State",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_6.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "d06f8986.71052",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 540,
+        "wires": [
+            [
+                "33896f17.97d348"
+            ]
+        ]
+    },
+    {
+        "id": "33896f17.97d348",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "2",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 540,
+        "wires": [
+            [
+                "25dcefc1.5fce1"
+            ]
+        ]
+    },
+    {
+        "id": "25dcefc1.5fce1",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1270,
+        "y": 540,
+        "wires": [
+            [
+                "6e0c5496.57d34c"
+            ],
+            [
+                "67e906e5.c294d8"
+            ]
+        ]
+    },
+    {
+        "id": "6e0c5496.57d34c",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out7 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_7.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "67e906e5.c294d8",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out7 State",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_7.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "1728583d.8a4c48",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 580,
+        "wires": [
+            [
+                "32aa1a56.6588de"
+            ]
+        ]
+    },
+    {
+        "id": "32aa1a56.6588de",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "2",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 580,
+        "wires": [
+            [
+                "7be0356c.dedf3c"
+            ]
+        ]
+    },
+    {
+        "id": "7be0356c.dedf3c",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1270,
+        "y": 580,
+        "wires": [
+            [
+                "1443edf5.cd67f2"
+            ],
+            [
+                "d0041411.00d66"
+            ]
+        ]
+    },
+    {
+        "id": "1443edf5.cd67f2",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out8 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_8.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "d0041411.00d66",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out8 State",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_8.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "3ce5fb9.fe2cd04",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Locked",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Locked",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 980,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "b4c45b4a.824a98",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign HTTP_Port",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.HTTP_Port",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 990,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "45343e1b.7c1338",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 720,
+        "wires": [
+            [
+                "5a3ba483.efe494"
+            ]
+        ]
+    },
+    {
+        "id": "5a3ba483.efe494",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "3",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 720,
+        "wires": [
+            [
+                "37af8ee0.85cc52"
+            ]
+        ]
+    },
+    {
+        "id": "37af8ee0.85cc52",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1270,
+        "y": 720,
+        "wires": [
+            [
+                "20ab2617.24de1a"
+            ],
+            [
+                "de0edf2.72f53a"
+            ],
+            [
+                "383502c7.ff4b26"
+            ]
+        ]
+    },
+    {
+        "id": "20ab2617.24de1a",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO1 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_1.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "383502c7.ff4b26",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO1 State",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_1.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "de0edf2.72f53a",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO1 Direction",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_1.Direction",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1540,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "9b32bb3c.8f2e58",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 760,
+        "wires": [
+            [
+                "5a61c3d2.bf93ec"
+            ]
+        ]
+    },
+    {
+        "id": "5a61c3d2.bf93ec",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "3",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 760,
+        "wires": [
+            [
+                "5de881ed.6cbff8"
+            ]
+        ]
+    },
+    {
+        "id": "5de881ed.6cbff8",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1270,
+        "y": 760,
+        "wires": [
+            [
+                "db441afc.1b2048"
+            ],
+            [
+                "8ea12c15.5953"
+            ],
+            [
+                "353a7169.77e726"
+            ]
+        ]
+    },
+    {
+        "id": "db441afc.1b2048",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO2 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_2.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "8ea12c15.5953",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO2 Direction",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_2.Direction",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1540,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "353a7169.77e726",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO2 State",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_2.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "8f6f12d5.2f39",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 800,
+        "wires": [
+            [
+                "e4cf58ac.db6d8"
+            ]
+        ]
+    },
+    {
+        "id": "e4cf58ac.db6d8",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "3",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 800,
+        "wires": [
+            [
+                "fdda2992.6f2e08"
+            ]
+        ]
+    },
+    {
+        "id": "fdda2992.6f2e08",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1270,
+        "y": 800,
+        "wires": [
+            [
+                "c4d001d9.327dc8"
+            ],
+            [
+                "7ef9035f.94949c"
+            ],
+            [
+                "e58a4aa1.d9b288"
+            ]
+        ]
+    },
+    {
+        "id": "c4d001d9.327dc8",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO3 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_3.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "7ef9035f.94949c",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO3 Direction",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_3.Direction",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1540,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "e58a4aa1.d9b288",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO3 State",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_3.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "acefd8db.b30538",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 840,
+        "wires": [
+            [
+                "c958a684.60b058"
+            ]
+        ]
+    },
+    {
+        "id": "c958a684.60b058",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "3",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 840,
+        "wires": [
+            [
+                "42de3197.d8b72"
+            ]
+        ]
+    },
+    {
+        "id": "42de3197.d8b72",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1270,
+        "y": 840,
+        "wires": [
+            [
+                "b7cd62dc.1bcbe"
+            ],
+            [
+                "494fa54d.7dd614"
+            ],
+            [
+                "a1c319d6.7ab028"
+            ]
+        ]
+    },
+    {
+        "id": "b7cd62dc.1bcbe",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO4 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_4.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "494fa54d.7dd614",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO4 Direction",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_4.Direction",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1540,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "a1c319d6.7ab028",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO4 State",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_4.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "8373a544.fac198",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 880,
+        "wires": [
+            [
+                "c5a632f9.8f3098"
+            ]
+        ]
+    },
+    {
+        "id": "c5a632f9.8f3098",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "3",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 880,
+        "wires": [
+            [
+                "2e4457b5.e2afd"
+            ]
+        ]
+    },
+    {
+        "id": "2e4457b5.e2afd",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1270,
+        "y": 880,
+        "wires": [
+            [
+                "e2513013.83c53"
+            ],
+            [
+                "93a6dbcc.03c528"
+            ],
+            [
+                "eb6e1b2a.cd38a"
+            ]
+        ]
+    },
+    {
+        "id": "eb6e1b2a.cd38a",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO5 State",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_5.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "93a6dbcc.03c528",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO5 Direction",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_5.Direction",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1540,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "3b974017.1424f8",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 920,
+        "wires": [
+            [
+                "cc3736ff.2b0b68"
+            ]
+        ]
+    },
+    {
+        "id": "cc3736ff.2b0b68",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "3",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 920,
+        "wires": [
+            [
+                "dae47a49.af50b8"
+            ]
+        ]
+    },
+    {
+        "id": "dae47a49.af50b8",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1270,
+        "y": 920,
+        "wires": [
+            [
+                "8e935f52.29f1f8"
+            ],
+            [
+                "d1362c28.690008"
+            ],
+            [
+                "da04980b.d41008"
+            ]
+        ]
+    },
+    {
+        "id": "8e935f52.29f1f8",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO6 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_6.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "d1362c28.690008",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO6 Direction",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_6.Direction",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1540,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "da04980b.d41008",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO6 State",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_6.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "f62afeaf.47f05",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 960,
+        "wires": [
+            [
+                "41c4687.e610318"
+            ]
+        ]
+    },
+    {
+        "id": "41c4687.e610318",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "3",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 960,
+        "wires": [
+            [
+                "67fb0f4f.60c4f8"
+            ]
+        ]
+    },
+    {
+        "id": "67fb0f4f.60c4f8",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1270,
+        "y": 960,
+        "wires": [
+            [
+                "1fda4a70.4197fe"
+            ],
+            [
+                "cd1e2809.6a2bc"
+            ],
+            [
+                "d79a3905.016e38"
+            ]
+        ]
+    },
+    {
+        "id": "1fda4a70.4197fe",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO7 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_7.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "cd1e2809.6a2bc",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO7 Direction",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_7.Direction",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1540,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "d79a3905.016e38",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO7 State",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_7.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "66441c5.a450d64",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 1000,
+        "wires": [
+            [
+                "aeb52b67.2d472"
+            ]
+        ]
+    },
+    {
+        "id": "aeb52b67.2d472",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "3",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 1000,
+        "wires": [
+            [
+                "48152df2.4f97b4"
+            ]
+        ]
+    },
+    {
+        "id": "48152df2.4f97b4",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1270,
+        "y": 1000,
+        "wires": [
+            [
+                "e4da2dd3.57c27"
+            ],
+            [
+                "f132e5bb.576a78"
+            ],
+            [
+                "35695d25.d41632"
+            ]
+        ]
+    },
+    {
+        "id": "e4da2dd3.57c27",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO8 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_8.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "f132e5bb.576a78",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO8 Direction",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_8.Direction",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1540,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "35695d25.d41632",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO8 State",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_8.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "e2513013.83c53",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO5 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.IO_5.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "e96237e.7113fc8",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Temp",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Temp",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 970,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "89848b19.1d532",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign FW",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.FW",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 970,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "fcec751e.977f2",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Typ",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Typ",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 970,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "3d3da924.66f29e",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Pwr",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Pwr",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 970,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "c71b6454.a53f88",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign PW",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.PW",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 970,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "de44ba48.a30d28",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ':'",
+        "splt": ":",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": true,
+        "addname": "",
+        "x": 420,
+        "y": 1920,
+        "wires": [
+            [
+                "bbea0b78.6a75f"
+            ]
+        ]
+    },
+    {
+        "id": "bbea0b78.6a75f",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "29",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 590,
+        "y": 1920,
+        "wires": [
+            [
+                "44685dc4.4fc7ec"
+            ]
+        ]
+    },
+    {
+        "id": "44685dc4.4fc7ec",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "4",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "5",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "6",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "7",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "8",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "9",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "10",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "11",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "12",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "13",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "14",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "15",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "16",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "17",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "18",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "19",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "20",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "21",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "22",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "23",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "24",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "25",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "26",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "27",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "28",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 28,
+        "x": 770,
+        "y": 1920,
+        "wires": [
+            [
+                "5521d8e3.b58268"
+            ],
+            [
+                "b4ed7db9.e7a9e8"
+            ],
+            [
+                "d7207cc5.c22da"
+            ],
+            [
+                "ccc4843d.205c2"
+            ],
+            [
+                "153dcd75.b8e8c3"
+            ],
+            [
+                "701fa267.9b21f4"
+            ],
+            [
+                "caa1223b.cb93d8"
+            ],
+            [
+                "fc95156e.133fe"
+            ],
+            [
+                "2ce7a7d7.8cff4"
+            ],
+            [
+                "2576823.9889dfe"
+            ],
+            [
+                "fc84edeb.ef8a18"
+            ],
+            [
+                "e374e693.926cc8"
+            ],
+            [
+                "423a4e58.bfb3d"
+            ],
+            [
+                "8d494e1d.e38458"
+            ],
+            [
+                "f4b78269.31857"
+            ],
+            [
+                "77d313bd.2c1994"
+            ],
+            [
+                "6d404803.0b7ea"
+            ],
+            [
+                "ed3ffe38.5330e8"
+            ],
+            [
+                "47b943d9.5222cc"
+            ],
+            [
+                "e2ef227e.65d3b"
+            ],
+            [
+                "aad34b9e.36891"
+            ],
+            [
+                "478cb05.468d15"
+            ],
+            [
+                "16e823b4.4bc33c"
+            ],
+            [
+                "ea178823.1998b"
+            ],
+            [
+                "986a0f0b.ee601"
+            ],
+            [
+                "9bb6d37d.feec78"
+            ],
+            [
+                "7d02e3da.c79c9c"
+            ],
+            [
+                "20f7a37e.6c397c"
+            ]
+        ]
+    },
+    {
+        "id": "5521d8e3.b58268",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Name",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 970,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "b4ed7db9.e7a9e8",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IP",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IP",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 960,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "d7207cc5.c22da",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Subnet Mask",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Mask",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1000,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "ccc4843d.205c2",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Gateway",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Gateway",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 980,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "153dcd75.b8e8c3",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign MAC",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.MAC",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 970,
+        "y": 1900,
+        "wires": []
+    },
+    {
+        "id": "701fa267.9b21f4",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 1940,
+        "wires": [
+            [
+                "a3107418.258e68"
+            ]
+        ]
+    },
+    {
+        "id": "a3107418.258e68",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "2",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 1940,
+        "wires": [
+            [
+                "bc9a1ca2.e58418"
+            ]
+        ]
+    },
+    {
+        "id": "bc9a1ca2.e58418",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1270,
+        "y": 1940,
+        "wires": [
+            [
+                "8d9bd3f5.6caf9"
+            ],
+            [
+                "788b141f.69bb6c"
+            ]
+        ]
+    },
+    {
+        "id": "16deaa42.ede046",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out2 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_2.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "caa1223b.cb93d8",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 1980,
+        "wires": [
+            [
+                "93a6d7dc.21d418"
+            ]
+        ]
+    },
+    {
+        "id": "93a6d7dc.21d418",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "2",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 1980,
+        "wires": [
+            [
+                "d3ff4ab5.833eb8"
+            ]
+        ]
+    },
+    {
+        "id": "d3ff4ab5.833eb8",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1270,
+        "y": 1980,
+        "wires": [
+            [
+                "16deaa42.ede046"
+            ],
+            [
+                "59bbfe0e.8961c"
+            ]
+        ]
+    },
+    {
+        "id": "59bbfe0e.8961c",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out2 State",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_2.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "fc95156e.133fe",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 2020,
+        "wires": [
+            [
+                "9e77f3d9.314a9"
+            ]
+        ]
+    },
+    {
+        "id": "9e77f3d9.314a9",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "2",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 2020,
+        "wires": [
+            [
+                "2d62c47e.778034"
+            ]
+        ]
+    },
+    {
+        "id": "2d62c47e.778034",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1270,
+        "y": 2020,
+        "wires": [
+            [
+                "3ad29bd5.0b2764"
+            ],
+            [
+                "4cba57c3.38056"
+            ]
+        ]
+    },
+    {
+        "id": "3ad29bd5.0b2764",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out3 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_3.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "4cba57c3.38056",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out3 State",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_3.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "2ce7a7d7.8cff4",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 2060,
+        "wires": [
+            [
+                "c3b251eb.739728"
+            ]
+        ]
+    },
+    {
+        "id": "c3b251eb.739728",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "2",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 2060,
+        "wires": [
+            [
+                "a944fb1b.fff0e"
+            ]
+        ]
+    },
+    {
+        "id": "a944fb1b.fff0e",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1270,
+        "y": 2060,
+        "wires": [
+            [
+                "f3e65cbd.5d9dc"
+            ],
+            [
+                "d86c14bc.a17288"
+            ]
+        ]
+    },
+    {
+        "id": "f3e65cbd.5d9dc",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out4 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_4.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 1900,
+        "wires": []
+    },
+    {
+        "id": "d86c14bc.a17288",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out4 State",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_4.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "2576823.9889dfe",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 2100,
+        "wires": [
+            [
+                "c9e1ce49.581338"
+            ]
+        ]
+    },
+    {
+        "id": "c9e1ce49.581338",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "2",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 2100,
+        "wires": [
+            [
+                "d6bd24ff.b3a798"
+            ]
+        ]
+    },
+    {
+        "id": "d6bd24ff.b3a798",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1270,
+        "y": 2100,
+        "wires": [
+            [
+                "95e36d5c.2b7b68"
+            ],
+            [
+                "3fbb5f4f.d0f05"
+            ]
+        ]
+    },
+    {
+        "id": "95e36d5c.2b7b68",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out5 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_5.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 1980,
+        "wires": []
+    },
+    {
+        "id": "3fbb5f4f.d0f05",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out5 State",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_5.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "fc84edeb.ef8a18",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 2140,
+        "wires": [
+            [
+                "12a7f39a.fb0944"
+            ]
+        ]
+    },
+    {
+        "id": "12a7f39a.fb0944",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "2",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 2140,
+        "wires": [
+            [
+                "30e312f8.ba0286"
+            ]
+        ]
+    },
+    {
+        "id": "30e312f8.ba0286",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1270,
+        "y": 2140,
+        "wires": [
+            [
+                "d0fb705d.c7e1f"
+            ],
+            [
+                "c38c9bd2.dbc21"
+            ]
+        ]
+    },
+    {
+        "id": "d0fb705d.c7e1f",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out6 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_6.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "c38c9bd2.dbc21",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out6 State",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_6.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 2100,
+        "wires": []
+    },
+    {
+        "id": "e374e693.926cc8",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 2180,
+        "wires": [
+            [
+                "862c7d94.9f214"
+            ]
+        ]
+    },
+    {
+        "id": "862c7d94.9f214",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "2",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 2180,
+        "wires": [
+            [
+                "6a3ba92a.b32b58"
+            ]
+        ]
+    },
+    {
+        "id": "6a3ba92a.b32b58",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1270,
+        "y": 2180,
+        "wires": [
+            [
+                "a9d2a1d6.318498"
+            ],
+            [
+                "d15c96d6.4938f"
+            ]
+        ]
+    },
+    {
+        "id": "a9d2a1d6.318498",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out7 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_7.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 2140,
+        "wires": []
+    },
+    {
+        "id": "d15c96d6.4938f",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out7 State",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_7.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 2180,
+        "wires": []
+    },
+    {
+        "id": "423a4e58.bfb3d",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 2220,
+        "wires": [
+            [
+                "a1caf61.fe4a088"
+            ]
+        ]
+    },
+    {
+        "id": "a1caf61.fe4a088",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "2",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 2220,
+        "wires": [
+            [
+                "74869bb2.0e1384"
+            ]
+        ]
+    },
+    {
+        "id": "74869bb2.0e1384",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1270,
+        "y": 2220,
+        "wires": [
+            [
+                "9ac311b6.72eb58"
+            ],
+            [
+                "fc09f132.b44108"
+            ]
+        ]
+    },
+    {
+        "id": "9ac311b6.72eb58",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out8 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_8.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 2220,
+        "wires": []
+    },
+    {
+        "id": "fc09f132.b44108",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out8 State",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_8.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 2260,
+        "wires": []
+    },
+    {
+        "id": "8d494e1d.e38458",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Locked",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Locked",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 980,
+        "y": 2260,
+        "wires": []
+    },
+    {
+        "id": "f4b78269.31857",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign HTTP_Port",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.HTTP_Port",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 990,
+        "y": 2300,
+        "wires": []
+    },
+    {
+        "id": "77d313bd.2c1994",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 2360,
+        "wires": [
+            [
+                "3f10d6af.ac2d12"
+            ]
+        ]
+    },
+    {
+        "id": "3f10d6af.ac2d12",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "3",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 2360,
+        "wires": [
+            [
+                "a0876669.e11008"
+            ]
+        ]
+    },
+    {
+        "id": "a0876669.e11008",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1270,
+        "y": 2360,
+        "wires": [
+            [
+                "cf0614e5.9f43a8"
+            ],
+            [
+                "9fd624c7.95e4a"
+            ],
+            [
+                "fd11e263.8a87"
+            ]
+        ]
+    },
+    {
+        "id": "cf0614e5.9f43a8",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO1 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_1.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 2300,
+        "wires": []
+    },
+    {
+        "id": "fd11e263.8a87",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO1 State",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_1.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 2380,
+        "wires": []
+    },
+    {
+        "id": "9fd624c7.95e4a",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO1 Direction",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_1.Direction",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1540,
+        "y": 2340,
+        "wires": []
+    },
+    {
+        "id": "6d404803.0b7ea",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 2400,
+        "wires": [
+            [
+                "49a7a426.cd1dec"
+            ]
+        ]
+    },
+    {
+        "id": "49a7a426.cd1dec",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "3",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 2400,
+        "wires": [
+            [
+                "dc9ec988.27baa8"
+            ]
+        ]
+    },
+    {
+        "id": "dc9ec988.27baa8",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1270,
+        "y": 2400,
+        "wires": [
+            [
+                "a61dcd48.016328"
+            ],
+            [
+                "8e5c1cd8.f06088"
+            ],
+            [
+                "4e99c2b2.d8f51c"
+            ]
+        ]
+    },
+    {
+        "id": "a61dcd48.016328",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO2 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_2.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 2420,
+        "wires": []
+    },
+    {
+        "id": "8e5c1cd8.f06088",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO2 Direction",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_2.Direction",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1540,
+        "y": 2460,
+        "wires": []
+    },
+    {
+        "id": "4e99c2b2.d8f51c",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO2 State",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_2.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 2500,
+        "wires": []
+    },
+    {
+        "id": "ed3ffe38.5330e8",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 2440,
+        "wires": [
+            [
+                "7670d1e5.3beec8"
+            ]
+        ]
+    },
+    {
+        "id": "7670d1e5.3beec8",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "3",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 2440,
+        "wires": [
+            [
+                "6df1f5af.1b0714"
+            ]
+        ]
+    },
+    {
+        "id": "6df1f5af.1b0714",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1270,
+        "y": 2440,
+        "wires": [
+            [
+                "24ceb6ef.f0637a"
+            ],
+            [
+                "5e919619.21d628"
+            ],
+            [
+                "91baa287.46fcd"
+            ]
+        ]
+    },
+    {
+        "id": "24ceb6ef.f0637a",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO3 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_3.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 2540,
+        "wires": []
+    },
+    {
+        "id": "5e919619.21d628",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO3 Direction",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_3.Direction",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1540,
+        "y": 2580,
+        "wires": []
+    },
+    {
+        "id": "91baa287.46fcd",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO3 State",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_3.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 2620,
+        "wires": []
+    },
+    {
+        "id": "47b943d9.5222cc",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 2480,
+        "wires": [
+            [
+                "f69e5be7.78b728"
+            ]
+        ]
+    },
+    {
+        "id": "f69e5be7.78b728",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "3",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 2480,
+        "wires": [
+            [
+                "9502df29.10f2b8"
+            ]
+        ]
+    },
+    {
+        "id": "9502df29.10f2b8",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1270,
+        "y": 2480,
+        "wires": [
+            [
+                "d12d5c51.792278"
+            ],
+            [
+                "c8be5269.0526d"
+            ],
+            [
+                "e058ed24.3cfec"
+            ]
+        ]
+    },
+    {
+        "id": "d12d5c51.792278",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO4 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_4.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 2660,
+        "wires": []
+    },
+    {
+        "id": "c8be5269.0526d",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO4 Direction",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_4.Direction",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1540,
+        "y": 2700,
+        "wires": []
+    },
+    {
+        "id": "e058ed24.3cfec",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO4 State",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_4.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 2740,
+        "wires": []
+    },
+    {
+        "id": "e2ef227e.65d3b",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 2520,
+        "wires": [
+            [
+                "26b8ed12.b84ee2"
+            ]
+        ]
+    },
+    {
+        "id": "26b8ed12.b84ee2",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "3",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 2520,
+        "wires": [
+            [
+                "83a5bf58.07c488"
+            ]
+        ]
+    },
+    {
+        "id": "83a5bf58.07c488",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1270,
+        "y": 2520,
+        "wires": [
+            [
+                "815a29dd.d0c6"
+            ],
+            [
+                "ca3a2ee.1b4b1d"
+            ],
+            [
+                "e4060afb.926c98"
+            ]
+        ]
+    },
+    {
+        "id": "e4060afb.926c98",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO5 State",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_5.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 2860,
+        "wires": []
+    },
+    {
+        "id": "ca3a2ee.1b4b1d",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO5 Direction",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_5.Direction",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1540,
+        "y": 2820,
+        "wires": []
+    },
+    {
+        "id": "aad34b9e.36891",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 2560,
+        "wires": [
+            [
+                "13fc7c63.ac7ad4"
+            ]
+        ]
+    },
+    {
+        "id": "13fc7c63.ac7ad4",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "3",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 2560,
+        "wires": [
+            [
+                "3b3e8c54.6a10f4"
+            ]
+        ]
+    },
+    {
+        "id": "3b3e8c54.6a10f4",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1270,
+        "y": 2560,
+        "wires": [
+            [
+                "fbf59978.79049"
+            ],
+            [
+                "8c31658d.0ff65"
+            ],
+            [
+                "4e6f3d4d.71a3cc"
+            ]
+        ]
+    },
+    {
+        "id": "fbf59978.79049",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO6 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_6.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 2900,
+        "wires": []
+    },
+    {
+        "id": "8c31658d.0ff65",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO6 Direction",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_6.Direction",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1540,
+        "y": 2940,
+        "wires": []
+    },
+    {
+        "id": "4e6f3d4d.71a3cc",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO6 State",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_6.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 2980,
+        "wires": []
+    },
+    {
+        "id": "478cb05.468d15",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 2600,
+        "wires": [
+            [
+                "1ba3f4b5.ec2cc3"
+            ]
+        ]
+    },
+    {
+        "id": "1ba3f4b5.ec2cc3",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "3",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 2600,
+        "wires": [
+            [
+                "97bc8a88.e61e98"
+            ]
+        ]
+    },
+    {
+        "id": "97bc8a88.e61e98",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1270,
+        "y": 2600,
+        "wires": [
+            [
+                "532c39f9.baf64"
+            ],
+            [
+                "1fedd36.8b2d3ad"
+            ],
+            [
+                "b25f61a5.990ce8"
+            ]
+        ]
+    },
+    {
+        "id": "532c39f9.baf64",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO7 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_7.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 3020,
+        "wires": []
+    },
+    {
+        "id": "1fedd36.8b2d3ad",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO7 Direction",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_7.Direction",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1540,
+        "y": 3060,
+        "wires": []
+    },
+    {
+        "id": "b25f61a5.990ce8",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO7 State",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_7.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 3100,
+        "wires": []
+    },
+    {
+        "id": "16e823b4.4bc33c",
+        "type": "split",
+        "z": "393cc12a.be2506",
+        "name": "Split by ','",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 960,
+        "y": 2640,
+        "wires": [
+            [
+                "34f9c0b4.e486b8"
+            ]
+        ]
+    },
+    {
+        "id": "34f9c0b4.e486b8",
+        "type": "batch",
+        "z": "393cc12a.be2506",
+        "name": "Create Index",
+        "mode": "count",
+        "count": "3",
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "topics": [],
+        "x": 1110,
+        "y": 2640,
+        "wires": [
+            [
+                "b504d5b7.e86f68"
+            ]
+        ]
+    },
+    {
+        "id": "b504d5b7.e86f68",
+        "type": "switch",
+        "z": "393cc12a.be2506",
+        "name": "Catch Index",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1270,
+        "y": 2640,
+        "wires": [
+            [
+                "9627e216.682f5"
+            ],
+            [
+                "b34d2f66.518d7"
+            ],
+            [
+                "277584de.107be4"
+            ]
+        ]
+    },
+    {
+        "id": "9627e216.682f5",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO8 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_8.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 3140,
+        "wires": []
+    },
+    {
+        "id": "b34d2f66.518d7",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO8 Direction",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_8.Direction",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1540,
+        "y": 3180,
+        "wires": []
+    },
+    {
+        "id": "277584de.107be4",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO8 State",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_8.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 3220,
+        "wires": []
+    },
+    {
+        "id": "815a29dd.d0c6",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign IO5 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.IO_5.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 2780,
+        "wires": []
+    },
+    {
+        "id": "ea178823.1998b",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Temp",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Temp",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 970,
+        "y": 2680,
+        "wires": []
+    },
+    {
+        "id": "986a0f0b.ee601",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign FW",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.FW",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 970,
+        "y": 2720,
+        "wires": []
+    },
+    {
+        "id": "9bb6d37d.feec78",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Typ",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Typ",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 970,
+        "y": 2760,
+        "wires": []
+    },
+    {
+        "id": "7d02e3da.c79c9c",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Pwr",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Pwr",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 970,
+        "y": 2800,
+        "wires": []
+    },
+    {
+        "id": "20f7a37e.6c397c",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign PW",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.PW",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 970,
+        "y": 2840,
+        "wires": []
+    },
+    {
+        "id": "788b141f.69bb6c",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out1 State",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_1.State",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "8d9bd3f5.6caf9",
+        "type": "ioBroker out",
+        "z": "393cc12a.be2506",
+        "name": "Assign Out1 Name",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_1.Name",
+        "ack": "true",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 1530,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "1d581dc8.522852",
+        "type": "comment",
+        "z": "393cc12a.be2506",
+        "name": "Receive UDP Trigger and Action Responses",
+        "info": "Receives NetPwrCtrl responses from all devices via UDP 7577.\nResponse is triggered by any action on the device.",
+        "x": 170,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "73966757.2b2858",
+        "type": "comment",
+        "z": "393cc12a.be2506",
+        "name": "Split & Index",
+        "info": "Payload needs to be split by ':' delimiter and then proper index (0-28) is created for the split messages.",
+        "x": 430,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "b0b8850e.7edf9",
+        "type": "comment",
+        "z": "393cc12a.be2506",
+        "name": "Split by MAC",
+        "info": "The unique ID is the MAC Address.",
+        "x": 270,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "ac3ac213.10dd2",
+        "type": "comment",
+        "z": "393cc12a.be2506",
+        "name": "Distribute by Index",
+        "info": "Payload is distributed by index.",
+        "x": 790,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "ce012c89.fd3ff8",
+        "type": "inject",
+        "z": "393cc12a.be2506",
+        "name": "wer da?",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "wer da?",
+        "payloadType": "str",
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "3eceb034.ca839"
+            ]
+        ]
+    },
+    {
+        "id": "af87beb0.e13548",
+        "type": "comment",
+        "z": "393cc12a.be2506",
+        "name": "Manual UDP Trigger",
+        "info": "Broadcasts „wer da?“ - String. to NetPwrControl UDP 7575.",
+        "x": 150,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "3eceb034.ca839",
+        "type": "udp out",
+        "z": "393cc12a.be2506",
+        "name": "BroadcastOut",
+        "addr": "255.255.255.255",
+        "iface": "",
+        "port": "7575",
+        "ipv": "udp4",
+        "outport": "7575",
+        "base64": false,
+        "multicast": "broad",
+        "x": 320,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ed6dad6b.718fb",
+        "type": "debug",
+        "z": "393cc12a.be2506",
+        "name": "Show Input",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 270,
+        "y": 1020,
+        "wires": []
+    }
+]

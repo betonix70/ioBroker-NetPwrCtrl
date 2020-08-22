@@ -1,0 +1,3466 @@
+{
+  "javascript.0.Anel": {
+    "_id": "javascript.0.Anel",
+    "type": "device",
+    "common": {
+      "name": "Anel",
+      "role": "Hersteller",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597757243536,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT",
+    "type": "device",
+    "common": {
+      "name": "NET-CTRL-HUT",
+      "role": "Schaltsteckdose Hutschiene",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597757380651,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Gateway": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Gateway",
+    "type": "state",
+    "common": {
+      "name": "Gateway",
+      "role": "Gateway",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763821765,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_1": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_1",
+    "type": "channel",
+    "common": {
+      "name": "IO 1",
+      "role": "IO",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597757599674,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_1.Direction": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_1.Direction",
+    "type": "state",
+    "common": {
+      "name": "Direction",
+      "role": "Direction",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597762591007,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_1.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_1.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597762561367,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_1.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_1.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597762622326,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_2": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_2",
+    "type": "channel",
+    "common": {
+      "name": "IO 2",
+      "role": "IO",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597757623753,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_2.Direction": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_2.Direction",
+    "type": "state",
+    "common": {
+      "name": "Direction",
+      "role": "Direction",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597762814515,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_2.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_2.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597762862523,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_2.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_2.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597762884280,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_3": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_3",
+    "type": "channel",
+    "common": {
+      "name": "IO 3",
+      "role": "IO",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597757645990,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_3.Direction": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_3.Direction",
+    "type": "state",
+    "common": {
+      "name": "Direction",
+      "role": "Direction",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597762913560,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_3.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_3.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": false
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597762957788,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_3.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_3.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597762977027,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_4": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_4",
+    "type": "channel",
+    "common": {
+      "name": "IO 4",
+      "role": "IO",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597757662028,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_4.Direction": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_4.Direction",
+    "type": "state",
+    "common": {
+      "name": "Direction",
+      "role": "Direction",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597762998658,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_4.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_4.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763019543,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_4.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_4.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763039713,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_5": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_5",
+    "type": "channel",
+    "common": {
+      "name": "IO 5",
+      "role": "IO",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597762455941,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_5.Direction": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_5.Direction",
+    "type": "state",
+    "common": {
+      "name": "Direction",
+      "role": "Direction",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763090227,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_5.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_5.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763108582,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_5.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_5.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763125530,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_6": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_6",
+    "type": "channel",
+    "common": {
+      "name": "IO 6",
+      "role": "IO",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597762475117,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_6.Direction": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_6.Direction",
+    "type": "state",
+    "common": {
+      "name": "Direction",
+      "role": "Direction",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763184251,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_6.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_6.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763206904,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_6.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_6.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763225377,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_7": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_7",
+    "type": "channel",
+    "common": {
+      "name": "IO 7",
+      "role": "IO",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597762496761,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_7.Direction": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_7.Direction",
+    "type": "state",
+    "common": {
+      "name": "Direction",
+      "role": "Direction",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763269800,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_7.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_7.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763290615,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_7.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_7.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763307674,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_8": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_8",
+    "type": "channel",
+    "common": {
+      "name": "IO 8",
+      "role": "IO",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597762515008,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_8.Direction": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_8.Direction",
+    "type": "state",
+    "common": {
+      "name": "Direction",
+      "role": "Direction",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763326562,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_8.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_8.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763347711,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IO_8.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IO_8.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763364937,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.IP": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.IP",
+    "type": "state",
+    "common": {
+      "name": "IP",
+      "role": "IP",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763786245,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.MAC": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.MAC",
+    "type": "state",
+    "common": {
+      "name": "MAC",
+      "role": "MAC",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763846851,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Mask": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Mask",
+    "type": "state",
+    "common": {
+      "name": "Mask",
+      "role": "Mask",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763804057,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763758179,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_1": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_1",
+    "type": "channel",
+    "common": {
+      "name": "Outlet 1",
+      "role": "Outlet",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597757420848,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_1.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_1.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763444421,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_1.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_1.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763570019,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_2": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_2",
+    "type": "channel",
+    "common": {
+      "name": "Outlet 2",
+      "role": "Outlet",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597757445023,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_2.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_2.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763459322,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_2.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_2.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763586988,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_3": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_3",
+    "type": "channel",
+    "common": {
+      "name": "Outlet 3",
+      "role": "Outlet",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597757467334,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_3.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_3.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763475658,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_3.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_3.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763602044,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_4": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_4",
+    "type": "channel",
+    "common": {
+      "name": "Outlet 4",
+      "role": "Outlet",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597757486421,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_4.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_4.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763491384,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_4.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_4.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763619882,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_5": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_5",
+    "type": "channel",
+    "common": {
+      "name": "Outlet 5",
+      "role": "Outlet",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597757510132,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_5.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_5.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763505859,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_5.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_5.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763637921,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_6": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_6",
+    "type": "channel",
+    "common": {
+      "name": "Outlet 6",
+      "role": "Outlet",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597757529339,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_6.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_6.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763520396,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_6.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_6.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763655296,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_7": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_7",
+    "type": "channel",
+    "common": {
+      "name": "Outlet 7",
+      "role": "Outlet",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597757546652,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_7.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_7.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763534381,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_7.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_7.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763672756,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_8": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_8",
+    "type": "channel",
+    "common": {
+      "name": "Outlet 8",
+      "role": "Outlet",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597757568596,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_8.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_8.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763549063,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_8.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_8.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597763688591,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO19": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO19",
+    "type": "channel",
+    "common": {
+      "name": "NET-CTRL-IO19",
+      "role": "Schaltsteckdose Rack",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597757300749,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Locked": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Locked",
+    "type": "state",
+    "common": {
+      "name": "Locked",
+      "role": "Locked",
+      "type": "number",
+      "desc": "Manuell erzeugt",
+      "def": 0,
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597817962853,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.HTTP_Port": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.HTTP_Port",
+    "type": "state",
+    "common": {
+      "name": "HTTP Port",
+      "role": "HTTP Port",
+      "type": "number",
+      "desc": "Manuell erzeugt",
+      "min": 0,
+      "def": 80,
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597818280759,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Temp": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Temp",
+    "type": "state",
+    "common": {
+      "name": "Temp",
+      "role": "Temp",
+      "type": "number",
+      "desc": "Manuell erzeugt",
+      "unit": "°C",
+      "def": 0,
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597818338971,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.FW": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.FW",
+    "type": "state",
+    "common": {
+      "name": "FW",
+      "role": "FW",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597818395071,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Typ": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Typ",
+    "type": "state",
+    "common": {
+      "name": "Typ",
+      "role": "Typ",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597818953776,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Pwr": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Pwr",
+    "type": "state",
+    "common": {
+      "name": "Pwr",
+      "role": "Pwr",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597819023915,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.PW": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.PW",
+    "type": "state",
+    "common": {
+      "name": "PW",
+      "role": "PW",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597819047822,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO",
+    "type": "device",
+    "common": {
+      "name": "NET-CTRL-IO",
+      "role": "Schaltsteckdose Rack",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597819532934,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_1": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_1",
+    "type": "channel",
+    "common": {
+      "name": "IO 1",
+      "role": "IO",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597819820526,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_2": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_2",
+    "type": "channel",
+    "common": {
+      "name": "IO 2",
+      "role": "IO",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597819887995,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_3": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_3",
+    "type": "channel",
+    "common": {
+      "name": "IO 3",
+      "role": "IO",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597819908505,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_4": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_4",
+    "type": "channel",
+    "common": {
+      "name": "IO 4",
+      "role": "IO",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597819926515,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_5": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_5",
+    "type": "channel",
+    "common": {
+      "name": "IO 5",
+      "role": "IO",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597819957288,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_6": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_6",
+    "type": "channel",
+    "common": {
+      "name": "IO 6",
+      "role": "IO",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597819975852,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_7": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_7",
+    "type": "channel",
+    "common": {
+      "name": "IO 7",
+      "role": "IO",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820001336,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_8": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_8",
+    "type": "channel",
+    "common": {
+      "name": "IO 8",
+      "role": "IO",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820017558,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_1": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_1",
+    "type": "channel",
+    "common": {
+      "name": "Outlet 1",
+      "role": "Outlet",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820108800,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_2": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_2",
+    "type": "channel",
+    "common": {
+      "name": "Outlet 2",
+      "role": "Outlet",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820125753,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_3": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_3",
+    "type": "channel",
+    "common": {
+      "name": "Outlet 3",
+      "role": "Outlet",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820143448,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_4": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_4",
+    "type": "channel",
+    "common": {
+      "name": "Outlet 4",
+      "role": "Outlet",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820160954,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_5": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_5",
+    "type": "channel",
+    "common": {
+      "name": "Outlet 5",
+      "role": "Outlet",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820175584,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_6": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_6",
+    "type": "channel",
+    "common": {
+      "name": "Outlet 6",
+      "role": "Outlet",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820194239,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_7": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_7",
+    "type": "channel",
+    "common": {
+      "name": "Outlet 7",
+      "role": "Outlet",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820210460,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_8": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_8",
+    "type": "channel",
+    "common": {
+      "name": "Outlet 8",
+      "role": "Outlet",
+      "desc": "Manuell erzeugt",
+      "icon": ""
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820225860,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_1.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_1.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820278404,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_2.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_2.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820311952,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_3.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_3.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820332177,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_4.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_4.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820347721,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_5.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_5.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820363318,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_6.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_6.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820379719,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_7.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_7.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820397135,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_8.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_8.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820410356,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_1.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_1.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820423719,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_2.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_2.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820438810,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_3.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_3.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820452433,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_4.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_4.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820465174,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_5.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_5.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820486913,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_6.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_6.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820508480,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_7.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_7.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820524183,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_8.State": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_8.State",
+    "type": "state",
+    "common": {
+      "name": "State",
+      "role": "State",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820552671,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_1.Direction": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_1.Direction",
+    "type": "state",
+    "common": {
+      "name": "Direction",
+      "role": "Direction",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820610461,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_2.Direction": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_2.Direction",
+    "type": "state",
+    "common": {
+      "name": "Direction",
+      "role": "Direction",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820624820,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_3.Direction": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_3.Direction",
+    "type": "state",
+    "common": {
+      "name": "Direction",
+      "role": "Direction",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820638939,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_4.Direction": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_4.Direction",
+    "type": "state",
+    "common": {
+      "name": "Direction",
+      "role": "Direction",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820651658,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_5.Direction": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_5.Direction",
+    "type": "state",
+    "common": {
+      "name": "Direction",
+      "role": "Direction",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820665378,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_6.Direction": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_6.Direction",
+    "type": "state",
+    "common": {
+      "name": "Direction",
+      "role": "Direction",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820687728,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_7.Direction": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_7.Direction",
+    "type": "state",
+    "common": {
+      "name": "Direction",
+      "role": "Direction",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820701428,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_8.Direction": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_8.Direction",
+    "type": "state",
+    "common": {
+      "name": "Direction",
+      "role": "Direction",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820715895,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_1.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_1.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820768214,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_2.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_2.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820785404,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_3.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_3.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820803236,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_4.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_4.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820815555,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_5.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_5.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820830435,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_6.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_6.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820843626,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_7.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_7.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820855731,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IO_8.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IO_8.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820872288,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_1.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_1.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820901522,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_2.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_2.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820919927,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_3.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_3.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820932751,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_4.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_4.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820944624,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_5.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_5.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820958330,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_6.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_6.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820970669,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_7.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_7.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820983317,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_8.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_8.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597820995500,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.FW": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.FW",
+    "type": "channel",
+    "common": {
+      "name": "FW",
+      "role": "FW",
+      "type": "Zeichenkette",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597821190053,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Gateway": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Gateway",
+    "type": "state",
+    "common": {
+      "name": "Gateway",
+      "role": "Gateway",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597821394164,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.HTTP_Port": {
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597821435721,
+    "common": {
+      "name": "HTTP Port",
+      "role": "HTTP Port",
+      "type": "number",
+      "desc": "Manuell erzeugt",
+      "min": 0,
+      "def": 80,
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    },
+    "_id": "javascript.0.Anel.NET-CTRL-IO.HTTP_Port",
+    "type": "state"
+  },
+  "javascript.0.Anel.NET-CTRL-IO.IP": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.IP",
+    "type": "state",
+    "common": {
+      "name": "IP",
+      "role": "IP",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597821606843,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Locked": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Locked",
+    "type": "state",
+    "common": {
+      "name": "Locked",
+      "role": "Locked",
+      "type": "number",
+      "desc": "Manuell erzeugt",
+      "min": 0,
+      "def": 0,
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597821648001,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.MAC": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.MAC",
+    "type": "state",
+    "common": {
+      "name": "MAC",
+      "role": "MAC",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597821713087,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Mask": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Mask",
+    "type": "state",
+    "common": {
+      "name": "Mask",
+      "role": "Mask",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597821746559,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Name": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Name",
+    "type": "state",
+    "common": {
+      "name": "Name",
+      "role": "Name",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597821776205,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.PW": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.PW",
+    "type": "state",
+    "common": {
+      "name": "PW",
+      "role": "PW",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597821807796,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Pwr": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Pwr",
+    "type": "state",
+    "common": {
+      "name": "Pwr",
+      "role": "Pwr",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597821913068,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Temp": {
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597821955670,
+    "common": {
+      "name": "Temp",
+      "role": "Temp",
+      "type": "number",
+      "desc": "Manuell erzeugt",
+      "unit": "°C",
+      "def": 0,
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    },
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Temp",
+    "type": "state"
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Typ": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Typ",
+    "type": "state",
+    "common": {
+      "name": "Typ",
+      "role": "Typ",
+      "type": "string",
+      "desc": "Manuell erzeugt",
+      "def": "",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597822021211,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_1.Switch": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_1.Switch",
+    "type": "state",
+    "common": {
+      "name": "Switch",
+      "role": "Switch",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "states": "false:no;true:yes",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597987328985,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_2.Switch": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_2.Switch",
+    "type": "state",
+    "common": {
+      "name": "Switch",
+      "role": "Switch",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "states": "false:no;true:yes",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597987366347,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_3.Switch": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_3.Switch",
+    "type": "state",
+    "common": {
+      "name": "Switch",
+      "role": "Switch",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "states": "false:no;true:yes",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597987399540,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_4.Switch": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_4.Switch",
+    "type": "state",
+    "common": {
+      "name": "Switch",
+      "role": "Switch",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "states": "false:no;true:yes",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597987428786,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_5.Switch": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_5.Switch",
+    "type": "state",
+    "common": {
+      "name": "Switch",
+      "role": "Switch",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "states": "false:no;true:yes",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597987454237,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_6.Switch": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_6.Switch",
+    "type": "state",
+    "common": {
+      "name": "Switch",
+      "role": "Switch",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "states": "false:no;true:yes",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597987471520,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_7.Switch": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_7.Switch",
+    "type": "state",
+    "common": {
+      "name": "Switch",
+      "role": "Switch",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "states": "false:no;true:yes",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597987488679,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-HUT.Outlet_8.Switch": {
+    "_id": "javascript.0.Anel.NET-CTRL-HUT.Outlet_8.Switch",
+    "type": "state",
+    "common": {
+      "name": "Switch",
+      "role": "Switch",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "states": "false:no;true:yes",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597987508496,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_1.Switch": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_1.Switch",
+    "type": "state",
+    "common": {
+      "name": "Switch",
+      "role": "Switch",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "states": "false:no;true:yes",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597987548296,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_2.Switch": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_2.Switch",
+    "type": "state",
+    "common": {
+      "name": "Switch",
+      "role": "Switch",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "states": "false:no;true:yes",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597987565044,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_3.Switch": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_3.Switch",
+    "type": "state",
+    "common": {
+      "name": "Switch",
+      "role": "Switch",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "states": "false:no;true:yes",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597987588605,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_4.Switch": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_4.Switch",
+    "type": "state",
+    "common": {
+      "name": "Switch",
+      "role": "Switch",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "states": "false:no;true:yes",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597987608233,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_5.Switch": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_5.Switch",
+    "type": "state",
+    "common": {
+      "name": "Switch",
+      "role": "Switch",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "states": "false:no;true:yes",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597987625674,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_6.Switch": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_6.Switch",
+    "type": "state",
+    "common": {
+      "name": "Switch",
+      "role": "Switch",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "states": "false:no;true:yes",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597987642251,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_7.Switch": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_7.Switch",
+    "type": "state",
+    "common": {
+      "name": "Switch",
+      "role": "Switch",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "states": "false:no;true:yes",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597987658523,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  },
+  "javascript.0.Anel.NET-CTRL-IO.Outlet_8.Switch": {
+    "_id": "javascript.0.Anel.NET-CTRL-IO.Outlet_8.Switch",
+    "type": "state",
+    "common": {
+      "name": "Switch",
+      "role": "Switch",
+      "type": "boolean",
+      "desc": "Manuell erzeugt",
+      "states": "false:no;true:yes",
+      "read": true,
+      "write": true,
+      "def": true
+    },
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1597987677174,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator",
+      "state": 1636
+    }
+  }
+}

@@ -1,0 +1,1801 @@
+[
+    {
+        "id": "bdd8fc5b.1e8f58",
+        "type": "tab",
+        "label": "NetPwrCrtl_UDP_Outlet_Switch",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "2dbf9763.f52d2",
+        "type": "udp out",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "IOOut",
+        "addr": "192.168.178.100",
+        "iface": "",
+        "port": "7575",
+        "ipv": "udp4",
+        "outport": "7575",
+        "base64": false,
+        "multicast": "false",
+        "x": 770,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "d062e722.4f8c58",
+        "type": "ioBroker in",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "IOOut1Switch",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_1.Switch",
+        "payloadType": "value",
+        "onlyack": "",
+        "func": "all",
+        "gap": "",
+        "fireOnStart": "false",
+        "x": 130,
+        "y": 140,
+        "wires": [
+            [
+                "9d74314f.a8263"
+            ]
+        ]
+    },
+    {
+        "id": "9d74314f.a8263",
+        "type": "switch",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "true/false",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "8b8d7acb.67404"
+            ],
+            [
+                "6e2495f7.6fd3dc"
+            ]
+        ]
+    },
+    {
+        "id": "6e2495f7.6fd3dc",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_off1",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "str",
+                "to": "Sw_off1adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 160,
+        "wires": [
+            [
+                "2dbf9763.f52d2"
+            ]
+        ]
+    },
+    {
+        "id": "504a579.8e77f28",
+        "type": "ioBroker in",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "IOOut2Switch",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_2.Switch",
+        "payloadType": "value",
+        "onlyack": "",
+        "func": "all",
+        "gap": "",
+        "fireOnStart": "false",
+        "x": 130,
+        "y": 220,
+        "wires": [
+            [
+                "94e2aa92.e0564"
+            ]
+        ]
+    },
+    {
+        "id": "94e2aa92.e0564",
+        "type": "switch",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "true/false",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 220,
+        "wires": [
+            [
+                "d32eea4a.d2865"
+            ],
+            [
+                "c86c4759.0761d"
+            ]
+        ]
+    },
+    {
+        "id": "d32eea4a.d2865",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_on2",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "str",
+                "to": "Sw_on2adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 200,
+        "wires": [
+            [
+                "2dbf9763.f52d2"
+            ]
+        ]
+    },
+    {
+        "id": "c86c4759.0761d",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_off2",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "str",
+                "to": "Sw_off2adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 240,
+        "wires": [
+            [
+                "2dbf9763.f52d2"
+            ]
+        ]
+    },
+    {
+        "id": "4034eac2.d73464",
+        "type": "ioBroker in",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "IOOut3Switch",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_3.Switch",
+        "payloadType": "value",
+        "onlyack": "",
+        "func": "all",
+        "gap": "",
+        "fireOnStart": "false",
+        "x": 130,
+        "y": 300,
+        "wires": [
+            [
+                "122a8e14.61e512"
+            ]
+        ]
+    },
+    {
+        "id": "122a8e14.61e512",
+        "type": "switch",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "true/false",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 300,
+        "wires": [
+            [
+                "25bc761d.2a0b62"
+            ],
+            [
+                "e8b4b7aa.c0c74"
+            ]
+        ]
+    },
+    {
+        "id": "25bc761d.2a0b62",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_on3",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "str",
+                "to": "Sw_on3adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 280,
+        "wires": [
+            [
+                "2dbf9763.f52d2"
+            ]
+        ]
+    },
+    {
+        "id": "e8b4b7aa.c0c74",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_off3",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "str",
+                "to": "Sw_off3adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 320,
+        "wires": [
+            [
+                "2dbf9763.f52d2"
+            ]
+        ]
+    },
+    {
+        "id": "5e154b21.6c573c",
+        "type": "ioBroker in",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "IOOut4Switch",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_4.Switch",
+        "payloadType": "value",
+        "onlyack": "",
+        "func": "all",
+        "gap": "",
+        "fireOnStart": "false",
+        "x": 130,
+        "y": 380,
+        "wires": [
+            [
+                "d1e7c9c5.ceb048"
+            ]
+        ]
+    },
+    {
+        "id": "d1e7c9c5.ceb048",
+        "type": "switch",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "true/false",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 380,
+        "wires": [
+            [
+                "44cfc806.0aad88"
+            ],
+            [
+                "94073f7b.b615"
+            ]
+        ]
+    },
+    {
+        "id": "44cfc806.0aad88",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_on4",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "str",
+                "to": "Sw_on4adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 360,
+        "wires": [
+            [
+                "2dbf9763.f52d2"
+            ]
+        ]
+    },
+    {
+        "id": "94073f7b.b615",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_off4",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "str",
+                "to": "Sw_off4adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 400,
+        "wires": [
+            [
+                "2dbf9763.f52d2"
+            ]
+        ]
+    },
+    {
+        "id": "aa3f6ee7.732258",
+        "type": "ioBroker in",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "IOOut5Switch",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_5.Switch",
+        "payloadType": "value",
+        "onlyack": "",
+        "func": "all",
+        "gap": "",
+        "fireOnStart": "false",
+        "x": 130,
+        "y": 460,
+        "wires": [
+            [
+                "46cb9a31.0cb0bc"
+            ]
+        ]
+    },
+    {
+        "id": "46cb9a31.0cb0bc",
+        "type": "switch",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "true/false",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 460,
+        "wires": [
+            [
+                "1fe907d5.d4423"
+            ],
+            [
+                "803d8218.153b88"
+            ]
+        ]
+    },
+    {
+        "id": "1fe907d5.d4423",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_on5",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "str",
+                "to": "Sw_on5adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 440,
+        "wires": [
+            [
+                "2dbf9763.f52d2"
+            ]
+        ]
+    },
+    {
+        "id": "803d8218.153b88",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_off5",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "str",
+                "to": "Sw_off5adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 480,
+        "wires": [
+            [
+                "2dbf9763.f52d2"
+            ]
+        ]
+    },
+    {
+        "id": "ec1ae3bf.6b18a8",
+        "type": "ioBroker in",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "IOOut6Switch",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_6.Switch",
+        "payloadType": "value",
+        "onlyack": "",
+        "func": "all",
+        "gap": "",
+        "fireOnStart": "false",
+        "x": 130,
+        "y": 540,
+        "wires": [
+            [
+                "2265a43d.826e1c"
+            ]
+        ]
+    },
+    {
+        "id": "2265a43d.826e1c",
+        "type": "switch",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "true/false",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 540,
+        "wires": [
+            [
+                "17d497af.8882d"
+            ],
+            [
+                "d9ad53a0.62269"
+            ]
+        ]
+    },
+    {
+        "id": "17d497af.8882d",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_on6",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "str",
+                "to": "Sw_on6adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 520,
+        "wires": [
+            [
+                "2dbf9763.f52d2"
+            ]
+        ]
+    },
+    {
+        "id": "d9ad53a0.62269",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_off6",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "str",
+                "to": "Sw_off6adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 560,
+        "wires": [
+            [
+                "2dbf9763.f52d2"
+            ]
+        ]
+    },
+    {
+        "id": "e97485a9.dd8468",
+        "type": "ioBroker in",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "IOOut7Switch",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_7.Switch",
+        "payloadType": "value",
+        "onlyack": "",
+        "func": "all",
+        "gap": "",
+        "fireOnStart": "false",
+        "x": 130,
+        "y": 620,
+        "wires": [
+            [
+                "811b5553.86aff"
+            ]
+        ]
+    },
+    {
+        "id": "811b5553.86aff",
+        "type": "switch",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "true/false",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 620,
+        "wires": [
+            [
+                "c981cb31.df2db"
+            ],
+            [
+                "10ba3060.b729f8"
+            ]
+        ]
+    },
+    {
+        "id": "c981cb31.df2db",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_on7",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "str",
+                "to": "Sw_on7adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 600,
+        "wires": [
+            [
+                "2dbf9763.f52d2"
+            ]
+        ]
+    },
+    {
+        "id": "10ba3060.b729f8",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_off7",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "str",
+                "to": "Sw_off7adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 640,
+        "wires": [
+            [
+                "2dbf9763.f52d2"
+            ]
+        ]
+    },
+    {
+        "id": "2619aada.827da6",
+        "type": "ioBroker in",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "IOOut8Switch",
+        "topic": "javascript.0.Anel.NET-CTRL-IO.Outlet_8.Switch",
+        "payloadType": "value",
+        "onlyack": "",
+        "func": "all",
+        "gap": "",
+        "fireOnStart": "false",
+        "x": 130,
+        "y": 700,
+        "wires": [
+            [
+                "f76b3e79.b29ef8"
+            ]
+        ]
+    },
+    {
+        "id": "f76b3e79.b29ef8",
+        "type": "switch",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "true/false",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 700,
+        "wires": [
+            [
+                "650432a2.167ddc"
+            ],
+            [
+                "3102b304.dabd14"
+            ]
+        ]
+    },
+    {
+        "id": "650432a2.167ddc",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_on8",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "str",
+                "to": "Sw_on8adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 680,
+        "wires": [
+            [
+                "2dbf9763.f52d2"
+            ]
+        ]
+    },
+    {
+        "id": "3102b304.dabd14",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_off8",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "str",
+                "to": "Sw_off8adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 720,
+        "wires": [
+            [
+                "2dbf9763.f52d2"
+            ]
+        ]
+    },
+    {
+        "id": "61810859.ac4af",
+        "type": "udp out",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "HUTOut",
+        "addr": "192.168.178.107",
+        "iface": "",
+        "port": "7575",
+        "ipv": "udp4",
+        "outport": "7575",
+        "base64": false,
+        "multicast": "false",
+        "x": 780,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "e1551bee.fa6398",
+        "type": "ioBroker in",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "HUTOut1Switch",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_1.Switch",
+        "payloadType": "value",
+        "onlyack": "",
+        "func": "all",
+        "gap": "",
+        "fireOnStart": "false",
+        "x": 140,
+        "y": 800,
+        "wires": [
+            [
+                "4d2d5fbb.6c86b8"
+            ]
+        ]
+    },
+    {
+        "id": "14e6400f.4af4c8",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_on1",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "str",
+                "to": "Sw_on1adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 780,
+        "wires": [
+            [
+                "61810859.ac4af"
+            ]
+        ]
+    },
+    {
+        "id": "4d2d5fbb.6c86b8",
+        "type": "switch",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "true/false",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 800,
+        "wires": [
+            [
+                "14e6400f.4af4c8"
+            ],
+            [
+                "3305670e.efef"
+            ]
+        ]
+    },
+    {
+        "id": "3305670e.efef",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_off1",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "str",
+                "to": "Sw_off1adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 820,
+        "wires": [
+            [
+                "61810859.ac4af"
+            ]
+        ]
+    },
+    {
+        "id": "2b9d40ec.75b3f",
+        "type": "ioBroker in",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "HUTOut2Switch",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_2.Switch",
+        "payloadType": "value",
+        "onlyack": "",
+        "func": "all",
+        "gap": "",
+        "fireOnStart": "false",
+        "x": 140,
+        "y": 880,
+        "wires": [
+            [
+                "83291289.98a8f"
+            ]
+        ]
+    },
+    {
+        "id": "83291289.98a8f",
+        "type": "switch",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "true/false",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 880,
+        "wires": [
+            [
+                "df7b3e0a.02336"
+            ],
+            [
+                "1ad03bdd.df42d4"
+            ]
+        ]
+    },
+    {
+        "id": "df7b3e0a.02336",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_on2",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "str",
+                "to": "Sw_on2adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 860,
+        "wires": [
+            [
+                "61810859.ac4af"
+            ]
+        ]
+    },
+    {
+        "id": "1ad03bdd.df42d4",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_off2",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "str",
+                "to": "Sw_off2adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 900,
+        "wires": [
+            [
+                "61810859.ac4af"
+            ]
+        ]
+    },
+    {
+        "id": "409d563f.af293",
+        "type": "ioBroker in",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "HUTOut3Switch",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_3.Switch",
+        "payloadType": "value",
+        "onlyack": "",
+        "func": "all",
+        "gap": "",
+        "fireOnStart": "false",
+        "x": 140,
+        "y": 960,
+        "wires": [
+            [
+                "34f5eaa2.0408be"
+            ]
+        ]
+    },
+    {
+        "id": "34f5eaa2.0408be",
+        "type": "switch",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "true/false",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 960,
+        "wires": [
+            [
+                "94782b13.b3beb8"
+            ],
+            [
+                "30c13b9c.805c8c"
+            ]
+        ]
+    },
+    {
+        "id": "94782b13.b3beb8",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_on3",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "str",
+                "to": "Sw_on3adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 940,
+        "wires": [
+            [
+                "61810859.ac4af"
+            ]
+        ]
+    },
+    {
+        "id": "30c13b9c.805c8c",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_off3",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "str",
+                "to": "Sw_off3adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 980,
+        "wires": [
+            [
+                "61810859.ac4af"
+            ]
+        ]
+    },
+    {
+        "id": "31172cf8.e17564",
+        "type": "ioBroker in",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "HUTOut4Switch",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_4.Switch",
+        "payloadType": "value",
+        "onlyack": "",
+        "func": "all",
+        "gap": "",
+        "fireOnStart": "false",
+        "x": 140,
+        "y": 1040,
+        "wires": [
+            [
+                "d1380405.b45df8"
+            ]
+        ]
+    },
+    {
+        "id": "d1380405.b45df8",
+        "type": "switch",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "true/false",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 1040,
+        "wires": [
+            [
+                "25ccad5b.2414aa"
+            ],
+            [
+                "589179a7.9b0678"
+            ]
+        ]
+    },
+    {
+        "id": "25ccad5b.2414aa",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_on4",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "str",
+                "to": "Sw_on4adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 1020,
+        "wires": [
+            [
+                "61810859.ac4af"
+            ]
+        ]
+    },
+    {
+        "id": "589179a7.9b0678",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_off4",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "str",
+                "to": "Sw_off4adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 1060,
+        "wires": [
+            [
+                "61810859.ac4af"
+            ]
+        ]
+    },
+    {
+        "id": "e3ab35ea.641408",
+        "type": "ioBroker in",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "HUTOut5Switch",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_5.Switch",
+        "payloadType": "value",
+        "onlyack": "",
+        "func": "all",
+        "gap": "",
+        "fireOnStart": "false",
+        "x": 140,
+        "y": 1120,
+        "wires": [
+            [
+                "6de51587.b1d524"
+            ]
+        ]
+    },
+    {
+        "id": "6de51587.b1d524",
+        "type": "switch",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "true/false",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 1120,
+        "wires": [
+            [
+                "95dcc8a0.0fb8b8"
+            ],
+            [
+                "7423e235.c6b03c"
+            ]
+        ]
+    },
+    {
+        "id": "95dcc8a0.0fb8b8",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_on5",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "str",
+                "to": "Sw_on5adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 1100,
+        "wires": [
+            [
+                "61810859.ac4af"
+            ]
+        ]
+    },
+    {
+        "id": "7423e235.c6b03c",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_off5",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "str",
+                "to": "Sw_off5adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 1140,
+        "wires": [
+            [
+                "61810859.ac4af"
+            ]
+        ]
+    },
+    {
+        "id": "ad8359d8.700f4",
+        "type": "ioBroker in",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "HUTOut6Switch",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_6.Switch",
+        "payloadType": "value",
+        "onlyack": "",
+        "func": "all",
+        "gap": "",
+        "fireOnStart": "false",
+        "x": 140,
+        "y": 1200,
+        "wires": [
+            [
+                "51552c7d.71709c"
+            ]
+        ]
+    },
+    {
+        "id": "51552c7d.71709c",
+        "type": "switch",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "true/false",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 1200,
+        "wires": [
+            [
+                "57763766.b5f418"
+            ],
+            [
+                "48ec6612.4c099"
+            ]
+        ]
+    },
+    {
+        "id": "57763766.b5f418",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_on6",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "str",
+                "to": "Sw_on6adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 1180,
+        "wires": [
+            [
+                "61810859.ac4af"
+            ]
+        ]
+    },
+    {
+        "id": "48ec6612.4c099",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_off6",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "str",
+                "to": "Sw_off6adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 1220,
+        "wires": [
+            [
+                "61810859.ac4af"
+            ]
+        ]
+    },
+    {
+        "id": "bbd9f8fa.4ac6a",
+        "type": "ioBroker in",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "HUTOut7Switch",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_7.Switch",
+        "payloadType": "value",
+        "onlyack": "",
+        "func": "all",
+        "gap": "",
+        "fireOnStart": "false",
+        "x": 140,
+        "y": 1280,
+        "wires": [
+            [
+                "6de585b0.f6a114"
+            ]
+        ]
+    },
+    {
+        "id": "6de585b0.f6a114",
+        "type": "switch",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "true/false",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 1280,
+        "wires": [
+            [
+                "323c3860.07aed"
+            ],
+            [
+                "8bf7ebb7.444bb"
+            ]
+        ]
+    },
+    {
+        "id": "323c3860.07aed",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_on7",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "str",
+                "to": "Sw_on7adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 1260,
+        "wires": [
+            [
+                "61810859.ac4af"
+            ]
+        ]
+    },
+    {
+        "id": "8bf7ebb7.444bb",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_off7",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "str",
+                "to": "Sw_off7adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 1300,
+        "wires": [
+            [
+                "61810859.ac4af"
+            ]
+        ]
+    },
+    {
+        "id": "4ab95414.d4b78c",
+        "type": "ioBroker in",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "HUTOut8Switch",
+        "topic": "javascript.0.Anel.NET-CTRL-HUT.Outlet_8.Switch",
+        "payloadType": "value",
+        "onlyack": "",
+        "func": "all",
+        "gap": "",
+        "fireOnStart": "false",
+        "x": 140,
+        "y": 1360,
+        "wires": [
+            [
+                "613122ab.d84cac"
+            ]
+        ]
+    },
+    {
+        "id": "613122ab.d84cac",
+        "type": "switch",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "true/false",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 1360,
+        "wires": [
+            [
+                "11a49a35.d5d20e"
+            ],
+            [
+                "fd557c85.205f48"
+            ]
+        ]
+    },
+    {
+        "id": "11a49a35.d5d20e",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_on8",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "str",
+                "to": "Sw_on8adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 1340,
+        "wires": [
+            [
+                "61810859.ac4af"
+            ]
+        ]
+    },
+    {
+        "id": "fd557c85.205f48",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_off8",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "str",
+                "to": "Sw_off8adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 1380,
+        "wires": [
+            [
+                "61810859.ac4af"
+            ]
+        ]
+    },
+    {
+        "id": "8b8d7acb.67404",
+        "type": "change",
+        "z": "bdd8fc5b.1e8f58",
+        "name": "Sw_on1",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "str",
+                "to": "Sw_on1adminanel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 120,
+        "wires": [
+            [
+                "2dbf9763.f52d2"
+            ]
+        ]
+    }
+]
