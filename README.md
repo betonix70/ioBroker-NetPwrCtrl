@@ -16,6 +16,6 @@ Here is what you need to do:
 6) Each time you use the devices web interface to switch on and off power outlets, the full data set is sent to the out going UDP port and cought by ioBroker to update the data structure.
 7) To switch an outlet from ioBroker, you first have to configure your second flow under Node-RED (NetPwrCrtl_UDP_Outlet_Switch). The screen dump "UDP Out.JPG" shows you where to put the IP Adress of your device.
 8) Go to Objects and find the "Switch" field for your Outlet (in my case Outlet_1 with "Name: Nr.1") (screen dump: Switch Outlet.JPG). Switch to "yes(true)".
-9) Two things will happen; the state of the outlet changes "State" to "1" (screen dump Effect 2.JPG) and the web switches from OFF (Effect 1.JPG) to ON (Effect 3).JPG and back if you switch to choose "no(false)".
+9) Two things will happen; the state of the outlet changes "State" to "1" (screen dump Effect 2.JPG) and the web switches from OFF (Effect 1.JPG) to ON (Effect 3).JPG and back if you choose "no(false)".
 
 From here you can i.e. use Blockly to do whatever you want if an object changes, that's up to you.
