@@ -1,7 +1,7 @@
 # ioBroker-NetPwrCtrl
 IOT connection of Anel NetPwrCtrl devices
 
-I don't like to code, why I did not chose to develop the usual adapter in ioBroker but use a Node-RED IOT connection instead. ioBroker with its graphical development capabilities is just perfect for this. As I know that others are also looking to implement a solution for Anel devices, I wanted to share my work as a jump start.
+I don't like to code, why I did not choose to develop the usual adapter in ioBroker but use a Node-RED IOT connection instead. ioBroker with its graphical development capabilities is just perfect for this. As I know that others are also looking to implement a solution for Anel devices, I wanted to share my work as a jump start.
 
 I have two Anel devices; "NET-PwrCtrl IO" and "NET-PwrCtrl HUT", each with 8 IO channels and 8 power outlets, no sensors though. I created a data structure for both of them for upload into the ioBroker Object structure (file: javascript.0.Anel.json) and also two Node-RED flows that bind the devices to the data structure (files: NetPwrCtrl_UDP_Input_Distribution.json, NetPwrCrtl_UDP_Outlet_Switch.json). 
 
