@@ -8,7 +8,7 @@ I have two Anel devices; "NET-PwrCtrl IO" and "NET-PwrCtrl HUT", each with 8 IO 
 Here is what you need to do:
 
 1) Set your UDP ports on the NET-PwrCtrl devices web page for settings to 7577 for Send and 7575 for Receive, allow UDP communication and save the settings.
-2) Set your "admin" password to the default, which is "anel" and save the settings.
+2) In user settings set your "admin" password to the default, which is "anel", toggle on "no authentication / login" and save the settings. The security concept under UDP is redicoulous, nothing else works for me then using "admin" with no login required. Password for admin can be changed, but then there need to be additional changes in the Node-RED flow.
 3) Upload javascript.0.Anel.json under ioBroker Objects which should then look similar to the screen dump in "javascript Data Structure.JPG". 
 4) Import "NetPwrCtrl_UDP_Input_Distribution.json" which should then look similar to "IOT-Anbindung ioBroker.JPG" (don't be confused by some German language!)
 3) Open the debug tab (rhs) and execute the "wer da ?" trigger (lhs). This gives you the MAC adresses of your device(s) (blackened). take these and double click on the "Catch MAC" node. Enter your MAC adresses there (screen dump: Use own MAC Addresses.JPG).
